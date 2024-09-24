@@ -18,7 +18,11 @@ module.exports = (sequelize, DataTypes) => {
       instructions: DataTypes.TEXT,
       picture1: DataTypes.TEXT,
       picture2: DataTypes.TEXT,
-      categoryId: DataTypes.INTEGER
+      categoryId: DataTypes.INTEGER,
+      recipeId: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      }
     },
     {
       sequelize,
